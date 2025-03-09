@@ -1,0 +1,200 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <script src="./javascript.js"></script>
+  </head>
+  <body>
+    <h1>Julian's Cheat Sheet</h1>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'HTMLBasic')">HTML Basic</button>
+        <button class="tablinks" onclick="openTab(event, 'HTMLTable')">HTML Table</button>
+        <button class="tablinks" onclick="openTab(event, 'CSSBasic')">CSS Basic</button>
+    </div>
+
+    <div id="HTMLBasic" class="tabcontent">
+        <h1>HTML Basic Reference</h1>
+        <h2>Basic Tags</h2>
+        <table>
+            <thead>
+              <th>Tag</th>
+              <th>Name</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;!DOCTYPE&gt;</span></td>
+                    <td>DOCTYPE</td>
+                    <td>Represents the document type.</td>
+                </tr>
+              <tr>
+                <td><span class="code">&lt;html&gt;</span></td>
+                <td>HTML</td>
+                <td>The wrapper element for all HTML code.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;body&gt;</span></td>
+                <td>Body</td>
+                <td>The visible part of the HTML document.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;h1&gt;...&lt;h6&gt;</span></td>
+                <td>HTML Headings</td>
+                <td>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;p&gt;</span></td>
+                <td>HTML paragraphs</td>
+                <td>HTML paragraphs.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;a&gt;</span></td>
+                <td>HTML links</td>
+                <td>HTML links to external content.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;img&gt;</span></td>
+                <td>HTML images</td>
+                <td>Display image from relative/absolute source.</td>
+              </tr>
+            </tbody>
+          </table>
+      
+          <h2>Table Attributes</h2>
+          <table>
+            <thead>
+              <th>Attribute</th>
+              <th>Name</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                  <td><span class="code">href</span></td> 
+                  <td>Hypertext REFerence</td>
+                  <td>specifies the URL of the page the link goes to.</td>
+                </tr>
+              <tr>
+                <td><span class="code">src</span></td>
+                <td>Source</td>
+                <td>specifies the path to the image to be displayed.</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div id="HTMLTable" class="tabcontent">
+        <h1>HTML Table Reference</h1>
+    <h2>Table Tags</h2>
+    <table>
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="code">&lt;table&gt;</span></td>
+            <td>Table</td>
+            <td>The wrapper element for all HTML tables.</td>
+          </tr>
+          <tr>
+            <td><span class="code">&lt;thead&gt;</span></td>
+            <td>Table Head</td>
+            <td>The set of rows defining the column headers in a table.</td>
+          </tr>
+          <tr>
+            <td><span class="code">&lt;tbody&gt;</span></td>
+            <td>Table Body</td>
+            <td>The set of rows containing actual table data.</td>
+          </tr>
+          <tr>
+            <td><span class="code">&lt;tr&gt;</span></td>
+            <td>Table Row</td>
+            <td>The table row container.</td>
+          </tr>
+          <tr>
+            <td><span class="code">&lt;td&gt;</span></td>
+            <td>Table Data</td>
+            <td>The table row container.</td>
+          </tr>
+          <tr>
+            <td><span class="code">&lt;tfoot&gt;</span></td>
+            <td>Table Foot</td>
+            <td>The set of rows defining the footer in a table.</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h2>Table Attributes</h2>
+      <table>
+        <thead>
+          <th>Attribute</th>
+          <th>Name</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+              <td><span class="code">colspan</span></td> 
+              <td>Column Span</td>
+              <td>Defines how many columns a td element should span.</td>
+            </tr>
+          <tr>
+            <td><span class="code">rowspan</span></td>
+            <td>Row Span</td>
+            <td>Defines how many rows a td element should span.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      
+    <div id="CSSBasic" class="tabcontent">
+        <h1>CSS Basic Reference</h1>
+        <table>
+            <thead>
+                    <th><strong>Basic Selectors</strong></th>
+                    <th><strong>Description</strong></th>
+                    <th><strong>Syntax</strong></th>
+            </thead>
+            <tbody>
+          
+            <tr>
+            <td><strong>Universal</strong></td>
+            <td>Selects all elements on the pages.</td>
+            <td>*{property:value;}</td>
+            </tr>
+            <tr>
+            <td><strong>Type</strong></td>
+            <td>Selects all HTML tag/element of given type in your document.</td>
+            <td>p {property:value;}</td>
+            </tr>
+            <tr>
+            <td><strong>Id</strong></td>
+            <td>Selects an element based on the value of its unique id attribute</td>
+            <td>#id {property:value;}</td>
+            </tr>
+            <tr>
+            <td><strong>Class</strong></td>
+            <td>Selects all elements in the document that have the given class attribute.</td>
+            <td>.class {property:value;}</td>
+            </tr>
+            <tr>
+            <td><strong>Attribute</strong></td>
+            <td>Selects all elements that have a specified attribute.</td>
+            <td>a[attribute=value] {property:value;}</td>
+            </tr>
+            <tr>
+            <td><strong>Combinators</strong></td>
+            <td>Complex selectors consisting of more than one selectors having some relationship between them.</td>
+            <td>selector1 selector2/ selector 1+selector2 / selector 1&gt; selector 2 {property: value;}</td>
+            </tr>
+            <tr>
+            <td><strong>Pseudo</strong></td>
+            <td>Define the special state of an element to add an effect to an existing element based on its states.</td>
+            <td>selector: pseudo-class{<br /> property: value;<br />}</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+  </body>
+</html>
